@@ -2,7 +2,7 @@
 
 HTTPTAPI is a TAPI Service Provider for Windows. It basically only implements the TSPILineMakeCall function and generates HTTP(S) request(s). This can be used to initiate calls using web services of PBX or using the buit-in webserver of SIP phones.
 
-HTTPTAPI was a commercial product of ipcom GmbH - see https://www.ipcom.at/en/telephony/httptapi/ and README.docx.
+HTTPTAPI was a commercial product of ipcom GmbH - see README.docx.
 
 ## Getting Started
 

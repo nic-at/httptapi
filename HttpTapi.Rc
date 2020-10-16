@@ -1,0 +1,284 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,11,0,0
+ PRODUCTVERSION 1,11,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "HttpTapi, a generic HTTP-based TAPI service provider"
+            VALUE "CompanyName", "ipcom.at"
+            VALUE "FileDescription", "HTTPTAPI 1.11"
+            VALUE "FileVersion", "1, 11, 0, 0"
+            VALUE "InternalName", "HTTPTAPI"
+            VALUE "LegalCopyright", "Copyright (C) 2009-2017"
+            VALUE "OriginalFilename", "HTTPTAPI"
+            VALUE "ProductName", "HTTPTAPI"
+            VALUE "ProductVersion", "1, 11, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LICENSE DIALOGEX 0, 0, 383, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HTTPTAPI License Information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Name",IDC_STATIC,16,24,19,8
+    LTEXT           "Company",IDC_STATIC,16,44,31,8
+    LTEXT           "Address",IDC_STATIC,16,64,27,8
+    LTEXT           "Valid until",IDC_STATIC,16,84,31,8
+    LTEXT           "Number of lines",IDC_STATIC,16,104,50,8
+    LTEXT           "Enter new license code",IDC_STATIC,7,129,74,8
+    EDITTEXT        IDC_NAME,72,21,298,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_COMPANY,72,41,298,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_ADDRESS,72,61,298,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_VALIDUNTIL,72,81,298,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_NUMBEROFLINES,72,101,298,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "This copy of HttpTapi is licensed to:",IDC_STATIC,7,7,369,116
+    PUSHBUTTON      "Apply",IDC_APPLY,326,179,50,14
+    EDITTEXT        IDC_LICENSE,7,140,313,53,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_LICENSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        VERTGUIDE, 16
+        VERTGUIDE, 72
+        VERTGUIDE, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+        HORZGUIDE, 35
+        HORZGUIDE, 55
+        HORZGUIDE, 75
+        HORZGUIDE, 95
+        HORZGUIDE, 115
+        HORZGUIDE, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 6, 18, 351, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "HTTPTAPI Configuration"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "HTTPTAPI 1.11 by IPCom. For more details please see www.ipcom.at",109,111,90,229,8,0,WS_EX_RIGHT
+END
+
+IDD_DIALOG1_DEBUG DIALOGEX 6, 18, 351, 377
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "HTTPTAPI Configuration"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Installed lines:",101,7,5,54,8
+    LISTBOX         IDC_DEVICES,5,13,275,92,WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Line properties",103,4,124,336,66
+    LTEXT           "Name:",113,7,138,26,8
+    EDITTEXT        IDC_NAME,52,135,278,12,ES_AUTOHSCROLL
+    LTEXT           "HTTP URI:",105,8,151,37,8
+    PUSHBUTTON      "Add",IDC_ADD,290,13,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE,290,30,50,14
+    PUSHBUTTON      "OK",IDOK,290,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,290,64,50,14
+    EDITTEXT        IDC_SNOM,52,320,278,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "The first %N pattern in every URI will be replaced with the dialed number. Separate multiple URIs with #.",107,7,302,325,19
+    LTEXT           "SNOM:",108,7,323,25,8
+    LTEXT           "HTTPTAPI 1.11 by IPCom. For more details please see www.ipcom.at",109,111,365,229,8,0,WS_EX_RIGHT
+    GROUPBOX        "Example URIs",IDC_STATIC,4,292,336,67
+    LTEXT           "Asterisk AMI:",110,7,341,45,8
+    EDITTEXT        IDC_ASTERISK,52,338,278,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "License Info",IDC_LICENSE,290,81,50,14
+    LTEXT           "Note: Regardless of how many lines you configure, you can only use as many lines as you have licensed!",IDC_STATIC,5,109,336,8
+    LTEXT           "Debug Level:",106,9,236,45,8
+    COMBOBOX        IDC_COMBO1,53,232,39,75,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "(use ""DebugView"" as Administrator to capture the log messages)",111,101,235,231,8
+    GROUPBOX        "Advanced Options",104,5,222,336,58
+    LTEXT           "CA Cert File:",112,7,164,47,8
+    EDITTEXT        IDC_URI,52,149,278,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CA,52,163,278,12,ES_AUTOHSCROLL
+    LTEXT           "Note: The CA cert file must be in PEM format and accessible by the network service!",114,7,178,323,8
+    LTEXT           "Test URI:",115,9,256,37,8
+    EDITTEXT        IDC_TESTURI,53,255,228,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Test",IDC_TEST,291,254,40,14
+    CONTROL         "Use Windows certificate store to verify HTTPS connections",IDC_CERTSTORE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,195,203,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        VERTGUIDE, 5
+        VERTGUIDE, 7
+        VERTGUIDE, 52
+        VERTGUIDE, 250
+        VERTGUIDE, 280
+        VERTGUIDE, 290
+        VERTGUIDE, 330
+        VERTGUIDE, 340
+        BOTTOMMARGIN, 98
+        HORZGUIDE, 5
+        HORZGUIDE, 13
+        HORZGUIDE, 78
+    END
+
+    IDD_DIALOG1_DEBUG, DIALOG
+    BEGIN
+        VERTGUIDE, 5
+        VERTGUIDE, 7
+        VERTGUIDE, 52
+        VERTGUIDE, 250
+        VERTGUIDE, 280
+        VERTGUIDE, 290
+        VERTGUIDE, 330
+        VERTGUIDE, 340
+        BOTTOMMARGIN, 373
+        HORZGUIDE, 5
+        HORZGUIDE, 13
+        HORZGUIDE, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Austria) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEA)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_AUSTRIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Austria) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

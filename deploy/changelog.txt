@@ -1,0 +1,62 @@
+HTTPTAPI README
+
+v. 1.11
+---------
+- ConnectWise CRM does lineMakeCall, TSPI_lineDrop, lineMakeCall, TSPI_lineDrop ... without TSPI_lineCloseCall.
+  Therefore I reset pLine->htCall already during TSPI_lineDrop (and not only during TSPI_lineCloseCall) to allow subsequent
+  lineMakeCall.
+
+v. 1.10
+---------
+- terminate log messages with \r\n
+- added new response code mapping
+  * 500: Internal Server Error: LINEDISCONNECTMODE_OUTOFORDER
+//  * 401: Access Denied: LINEDISCONNECTMODE_DESTINATIONBARRED
+TODO: Add new mappings to Word document
+
+v. 1.9
+---------
+- allow basic/digest authentication: username/password must be specified in the URL
+  e.g.: https://user:pass@example.com/dial....
+- disable TEST-URI field as this is not implemented yet.
+
+v. 1.8
+---------
+- follow HTTP 3xx redirection, max 20 times.
+
+v. 1.6
+---------
+- add # as allowed dialstring character. This leads to following allowed characters:
+  0123456789+*#
+- URL-encode the dialed number
+
+v. 1.5
+---------
+- internal release
+
+v. 1.4
+---------
+- HTTPS: allow to use certificates from the Windows certificate store (uses a temp-file. TODO: load directly into memory)
+
+v. 1.3
+---------
+- support for HTTPS (path to CA cert file must be specified, CA cert must be in PEM format), uses openssl 1.0
+
+v. 1.2
+---------
+- fixed issues with Outlook (implemented TSPI_lineSetStatusMessages)
+
+v. 1.1
+---------
+- fixed issues with Windows 7
+- storage of HTTPTAPI settings moved from Registry key HKEY_LOCAL_MACHINE\SOFTWARE\IPCOM\HttpTapi to 
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony\HTTPTAPI
+- more error messages
+
+v. 1.0
+---------
+- first release
+- support for multiple consecutive HTTP requests (use # as delimiter)
+- example for SNOM phones and Asterisk AJAM (enable AJAM and a manager account in the Asterisk configuration)
+- replace %N with the to-be-dialed number
+- note: uninstall/install HTTPTAPI after adding/removing lines

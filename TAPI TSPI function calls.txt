@@ -1,0 +1,81 @@
+Verfügbare TSPs anzeigen lassen:
+  DllMain
+
+TSP hinzufügen:
+  DllMain
+  TSPI_ProviderUIIdentify
+  DllMain
+  TUISPI_providerInstall
+  
+  folgender Teil kommt manchmal, aber nicht immer!!!
+  TSPI_lineNegotiateTSPIVersion
+  TSPI_providerEnumDevices
+  TSPI_providerInit
+  TSPI_lineNegotiateTSPIVersion
+  TSPI_lineGetExtensionID
+  TSPI_lineGetDevCaps
+  TSPI_lineGetDevCaps
+  TSPI_lineOpen
+  TSPI_lineGetNumAddressIDs
+  TSPI_lineGetID
+  TSPI_lineClose
+
+dialer.exe starten:
+  TSPI_lineGetExtensionID
+  TSPI_lineGetDevCaps
+  TSPI_lineGetDevCaps
+  TSPI_lineGetAddressCaps
+  TSPI_lineOpen
+  TSPI_lineGetNumAddressIDs
+  TSPI_lineSetDefaultMediaDetection
+  TSPI_lineGetDevCaps
+  TSPI_lineGetDevCaps
+  
+
+dialer.exe beenden:
+  TSPI_lineClose
+
+Outlook starten:
+  TSPI_lineNegotiateTSPIVersion
+  TSPI_providerEnumDevices
+  TSPI_providerInit
+  TSPI_lineNegotiateTSPIVersion
+  TSPI_phoneNegotiateTSPIVersion
+  TSPI_lineGetDevCaps
+  TSPI_lineGetDevCaps
+
+Outlook Telefonat starten: ACHTUNG: Outlook benötigt TSPI_lineSetStatusMessages ansonsten wird ein Fehler erzeugt!
+  TSPI_lineOpen
+  TSPI_lineGetNumAddressIDs
+  TSPI_lineSetStatusMessages
+  TSPI_lineMakeCall
+  TSPI_lineGetCallInfo
+
+TSP konfigurieren (via control panel):
+  DllMain
+  DllMain
+  TSPI_providerUIIdentify
+  DllMain
+  TUISPI_providerConfig
+
+
+TSP entfernen:
+  TSPI_providerUIIdentify
+  DllMain
+  TUISPI_providerRemoveing ...
+  TSPI_providerShutdown
+
+Windows startup:
+  DllMain
+  TSPI_lineNegotiateTSPIVersion
+  TSPI_providerEnumDevices
+  TSPI_providerInit
+  TSPI_lineNegotiateTSPIVersion
+  TSPI_lineGetExtensionID
+  TSPI_lineGetDevCaps
+  TSPI_lineGetDevCaps
+  TSPI_lineOpen
+  TSPI_lineGetNumAddressIDs
+  TSPI_lineGetID
+  TSPI_lineClose
+

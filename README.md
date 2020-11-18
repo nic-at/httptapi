@@ -15,3 +15,10 @@ Compile libcurl and libssl.
 ### Installing
 
 Once compiled, copy the .tsp file into the Windows\system32 directory. Copy the file using the Windows Explorer to avoid SysWOW64 issues.
+
+### License Key
+
+The latest release binaries still contains the license check. You can use this 9999 lines license (just enter it in the Configuration->LicenseInfo window and press "apply"):
+
+CE3rCZyNoZykP57K0x0mRgCkIz9vr17CgxpPM2OfAT8USBDAZthYuoNsiRxnYF2v8m882F
+cY+DunOuk/Hu9kOGCQ+hzEolsM
